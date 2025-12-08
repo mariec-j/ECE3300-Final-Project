@@ -31,20 +31,6 @@ module button_controller(
     output reg right_pressed
 );
 
-    module direction_input.v (
-    input clk,              // 100 MHz clock
-    input reset,
-    input btn_up,
-    input btn_down,
-    input btn_left,
-    input btn_right,
-    output reg up_pressed,
-    output reg down_pressed,
-    output reg left_pressed,
-    output reg right_pressed
-
-);
-
 always @(posedge clk) begin
     if (up_button) begin
         up_pressed <= 1;
